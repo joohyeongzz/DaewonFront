@@ -10,18 +10,19 @@ import { ProductType } from "@/(FSD)/shareds/types/product/Product.type";
 import { fetchServerData } from "@/(FSD)/shareds/fetch/fetchServerData";
 
 const ProductRankOuterList = async () => {
-    const productCardList: ProductType[] = await fetchServerData({path: "/product/rank/아우터" });
+    // const productCardList: ProductType[] = await fetchServerData({path: "/product/rank/아우터" });
 
-    if(!productCardList) return <></>;
+    // if(!productCardList) return <></>;
 
     return (
-        <div className={styles.product_rank_container}>
-            <div className={styles.rank_box}>
-                <TextLargeShared>아우터 인기 순위</TextLargeShared>
-                <Link href={"/rank/outer"}><TextSmallShared>더보기</TextSmallShared></Link>
-            </div>
-            <ProductCardSlideList productList={productCardList} isRank={true} />
-        </div>
+        // <div className={styles.product_rank_container}>
+        //     <div className={styles.rank_box}>
+        //         <TextLargeShared>아우터 인기 순위</TextLargeShared>
+        //         <Link href={"/rank/outer"}><TextSmallShared>더보기</TextSmallShared></Link>
+        //     </div>
+        //     <ProductCardSlideList productList={productCardList} isRank={true} />
+        // </div>
+        <></>
     );
 };
 

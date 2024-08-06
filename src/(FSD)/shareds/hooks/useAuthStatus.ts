@@ -18,14 +18,18 @@ const useAuthStatus = () => {
 
     useEffect(() => {
         if (isError) {
+            if (typeof window !== 'undefined') {
             localStorage.removeItem("access_token");
             localStorage.removeItem("refresh_token");
+            }
         }
     }, [isError]);
 
     useEffect(() => {
+        if (typeof window !== 'undefined') {
         refetch();
-    }, [localStorage.getItem("access_token")]);
+        }
+    }, [typeof window !== 'undefined' && localStorage.getItem("access_token")]);
 
     return { data, isPending };
 };
