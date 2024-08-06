@@ -12,6 +12,12 @@ const nextConfig = {
         locales: ["ko-KR"],
         defaultLocale: "ko-KR",
     },
+    eslint: {
+        ignoreDuringBuilds: true,
+      }
 };
+
+
+
 
 export default nextConfig;

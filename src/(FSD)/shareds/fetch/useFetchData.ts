@@ -9,7 +9,7 @@ const useFetchData = () => {
         let response = null;
         
         if ((!isNotAuthRequired) || (isAuthRequired)) {
-            response = await fetch(`http://localhost:8090/api${path}`, {
+            response = await fetch(`http://localhost:8090${path}`, {
                 method: method,
                 headers: {
                     "Content-Type": contentType,
