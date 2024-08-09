@@ -5,8 +5,6 @@
 
 [build]
   command = "npm run build"
-  publish = "out"
+  publish = ".next"
 
 
-[dev]
-command = "npm run start"
