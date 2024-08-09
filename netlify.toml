@@ -2,6 +2,10 @@
   from = "/*"
   to = "/index.html"
   status = 200
+  
 [build]
-  command = "npm run build"
-  publish = ".next"
+command = "npm run exoport"
+publish = "out"
+
+[[plugins]]
+package = "@netlify/plugin-nextjs"
