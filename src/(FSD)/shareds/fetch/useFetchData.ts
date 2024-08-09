@@ -16,7 +16,7 @@ const useFetchData = () => {
 
             // 환경에 따라 백엔드 호스트 설정
             if (hostname === "localhost") {
-                setBackendHost("http://localhost:8090");
+                setBackendHost("https://www.awskjh.p-e.kr");
             } else {
                 setBackendHost("https://www.awskjh.p-e.kr");
             }

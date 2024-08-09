@@ -3,7 +3,7 @@ interface fetchServerDataType {
 }
 
 export const fetchServerData = async ({ path, }: fetchServerDataType) => {
-    const response = await fetch(`http://localhost:8090${path}`);
+    const response = await fetch(`https://www.awskjh.p-e.kr${path}`);
     
     const data = response.json();
 
