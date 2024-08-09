@@ -27,7 +27,7 @@ const useFetchData = () => {
         let response = null;
 
         if ((!isNotAuthRequired) || (isAuthRequired)) {
-            response = await fetch(`${backendHost}/api${path}`, {
+            response = await fetch(`${backendHost}${path}`, {
                 method: method,
                 headers: {
                     "Content-Type": contentType,
