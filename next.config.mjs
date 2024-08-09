@@ -12,7 +12,7 @@ const nextConfig = {
         locales: ["ko-KR"],
         defaultLocale: "ko-KR",
     },
-   output: 'export'
+
 };
 
 
