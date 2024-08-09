@@ -7,6 +7,7 @@ import banner from "../../../../asd.gif"
 
 
 const Page = () => {
+    console.log("asda")
     return (
         <>
             <AppSection>
