@@ -2,9 +2,9 @@
   from = "/*"
   to = "/index.html"
   status = 200
-  
+
 [build]
-command = "npm run exoport"
+command = "npm run export"
 publish = "out"
 
 [[plugins]]
