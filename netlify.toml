@@ -4,7 +4,7 @@
   status = 200
 
 [build]
-command = "npm run export"
+command = "next build"
 publish = "out"
 
 [[plugins]]
