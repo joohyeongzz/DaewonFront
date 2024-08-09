@@ -8,3 +8,5 @@
   publish = ".next"
 
 
+[functions]
+  included_files = ["path-to-content-folder"]
